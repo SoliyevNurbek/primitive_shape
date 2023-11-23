@@ -12,7 +12,7 @@ class Point:
         Returns:
             float or int: distance.
         """
-        pass
+        return self.y
 
     def distance_from_Ycoordinate(self):
         """
@@ -23,7 +23,7 @@ class Point:
         Returns:
             float or int: distance.
         """
-        pass
+        return self.x
 
     def getQuadrant(self):
         """
@@ -34,18 +34,17 @@ class Point:
         Returns:
             int: quadrant.
         """
-        pass
-
+        return "I" if self.x>0 and self.y>0 else "II" if self.x<0 and self.y>0 else "III" if self.x<0 and self.y<0 else "IV" if self.x>0 and self.y<0 else "CENTER" if self.x==0 and self.y==0 else  "Error Point"
     def on_Xcoordinate(self):
         """
-        This method checks for a point on the X coordinate.
+        Ushbu usul x koordinatsiyasida nuqta uchun tekshiradi.
 
         Args:
             No
         Returns:
             bool: result.
         """
-        pass
+        return True if self.y==0 else False
 
     def on_Ycoordinate(self):
         """
@@ -56,5 +55,5 @@ class Point:
         Returns:
             bool: result.
         """
-        pass
+        return True if self.x==0 else False
  
